@@ -4,18 +4,23 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <div class=" align-content-center px-5 py-2 bg-white">
-      <nav class="navbar align-content-lg-end mx-5 px-lg-5  ">
-        <div class="container-fluid px-5 mx-5  align-content-lg-end ">
-          <RouterLink to="/" class="nav-link text-navy fw-bolder ">Home</RouterLink>
-          <RouterLink to="/about" class="nav-link text-navy fw-bolder">About</RouterLink>
-          <RouterLink to="/movies" class="nav-link text-navy fw-bolder">Movies</RouterLink>
-          <RouterLink to="/signUp" class="nav-link text-navy fw-bolder">Sign Up</RouterLink>
-          <RouterLink to="/signIn" class="nav-link text-navy fw-bolder">Sign In</RouterLink>
-        </div>
-      </nav>
-    </div>
-    
+    <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <RouterLink to="/" class="nav-link text-navy  active  ">Home</RouterLink>
+  </li>
+  <li class="nav-item">
+    <RouterLink to="/about" class="nav-link text-navy ">About</RouterLink>
+  </li>
+  <li class="nav-item">
+    <RouterLink to="/movies" class="nav-link text-navy ">Movies</RouterLink>
+  </li>
+  <li class="nav-item">
+    <RouterLink to="/signUp" class="nav-link text-navy ">Sign Up</RouterLink>
+  </li>
+  <li class="nav-item">
+    <RouterLink to="/signIn" class="nav-link text-navy ">Sign In</RouterLink>
+  </li>
+</ul>
   </header>
   <RouterView />
 </template>
